@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORSE</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+            background-color: black;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+
+
+        }
+
+        nav {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            width: 100%;
+            font-size: 20px;
+            padding: 20px 40px;
+            text-align: center;
+            border-bottom: 1px solid #d4af37;
+
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            color: #d4af37;
+            letter-spacing: 1.8px;
+            line-height: 50px;
+            transition: .4s;
+            margin-left: 25px;
+
+        }
+
+        a:hover {
+            color: black;
+            background-color: #d4af37;
+        }
+
+        .cercive {
+            max-width: 550px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            color: white;
+            border-left: 5px solid #d4af37;
+        }
+
+        h1 {
+            color: #d4af37;
+            font-size: 3.6rem;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.25rem;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 10%;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            color: white;
+        }
+
+        #arabian {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url(sekil1.png);
+        }
+
+        #arabian .cercive {
+            animation: appo 1s ease-out;
+        }
+
+
+        #friesian {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url(sekil2.png);
+
+
+        }
+
+        #friesian .cercive {
+            animation: free 1s ease-out;
+            border-left-color: #ffffff;
+        }
+
+        #friesian h1 {
+            color: #ffff;
+        }
+
+        #mustang {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url(sekil3.png);
+        }
+
+        #mustang .cercive {
+            animation: zoom 1s ease-out;
+            border-left-color: #ff8c00;
+        }
+
+        #mustang h1 {
+            color: #ff8c00;
+        }
+
+        #appaloosa {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent), url(sekil4.png);
+        }
+
+        #appaloosa .cercive {
+            animation: appo 1.2s ease-in-out;
+            border-left-color: #8db600;
+        }
+
+        #appaloosa h1 {
+            color: #8db600;
+        }
+
+        @keyframes appo {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes free {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes zoom {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#arabian">ARABIAN</a>
+        <a href="#friesian">FRIESIAN</a>
+        <a href="#mustang">MUSTANG</a>
+        <a href="#appaloosa">APPALOOSA</a>
+    </nav>
+
+    <section id="arabian">
+        <div class="cercive">
+            <h1>Arabian Horse</h1>
+            <p>Ərəb atı dünyanın ən qədim və ən tanınmış at cinslərindən biridir. Onlar dözümlülükləri və zərif baş
+                formaları ilə seçilirlər.</p>
+        </div>
+    </section>
+    <section id="friesian">
+        <div class="cercive">
+            <h1>Friesian Horse</h1>
+            <p>Friz atları Hollandiya mənşəlidir. Onlar tamamilə qara rəngləri, uzun yalları və möhtəşəm duruşları ilə
+                "qara
+                mirvari" adlandırılırlar.</p>
+
+        </div>
+
+    </section>
+    <section id="mustang">
+        <div class="cercive">
+            <h1>Mustang Horse</h1>
+            <p>Mustanqlar Şimali Amerikanın vəhşi atlarıdır. Azadlıq və güc simvolu olan bu atlar olduqca sürətli və
+                çevikdirlər.</p>
+
+        </div>
+    </section>
+    <section id="appaloosa">
+        <div class="cercive">
+            <h1>Appaloosa Horse</h1>
+            <p>Appaloosa özünəməxsus xallı dərisi ilə tanınır. Bu atlar həm vizual gözəlliyi, həm də çox yönlü iş
+                qabiliyyəti ilə məşhurdur.</p>
+
+        </div>
+    </section>
+</body>
+
+</html>
