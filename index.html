@@ -18,6 +18,10 @@
 
 
         }
+        .container{
+            display: flex;
+            flex: wrap;
+        }
 
         nav {
             position: fixed;
@@ -148,8 +152,8 @@
             }
 
             to {
-                transform: translateY(0);
-                opacity: 1;
+                transform: translateY(100%);
+                opacity: 0;
             }
         }
 
@@ -175,8 +179,8 @@
         <a href="#mustang">MUSTANG</a>
         <a href="#appaloosa">APPALOOSA</a>
     </nav>
-
-    <section id="arabian">
+<div class="conatiner">
+<section id="arabian">
         <div class="cercive">
             <h1>Arabian Horse</h1>
             <p>Ərəb atı dünyanın ən qədim və ən tanınmış at cinslərindən biridir. Onlar dözümlülükləri və zərif baş
@@ -209,6 +213,8 @@
 
         </div>
     </section>
+</div>
+    
 </body>
 
 </html>
